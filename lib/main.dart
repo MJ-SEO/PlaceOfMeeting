@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/animation/animated_bottom_bar.dart';
 import 'package:flutter_widgets/grocerry_kit/chatroom.dart';
-import 'package:flutter_widgets/grocerry_kit/game.dart';
+import 'package:flutter_widgets/grocerry_kit/category/category_detail.dart';
 import 'package:flutter_widgets/grocerry_kit/home_page.dart';
 import 'package:flutter_widgets/grocerry_kit/login.dart';
 import 'package:flutter_widgets/grocerry_kit/make_room.dart';
-//import 'package:flutter_widgets/grocerry_kit/music.dart';
 import 'package:flutter_widgets/grocerry_kit/my_account.dart';
 import 'package:flutter_widgets/grocerry_kit/my_profile.dart';
 import 'package:flutter_widgets/grocerry_kit/profile.dart';
 import 'package:flutter_widgets/grocerry_kit/search.dart';
-// import 'package:flutter_widgets/grocerry_kit/sports.dart';
-// import 'package:flutter_widgets/grocerry_kit/study.dart';
+import 'package:flutter_widgets/grocerry_kit/sub_pages/home_list.dart';
 import 'package:flutter_widgets/grocerry_kit/welcome.dart';
 import 'package:flutter_widgets/note_app/edit_note.dart';
 
+import 'grocerry_kit/board_pages/board_room.dart';
+import 'grocerry_kit/managa_one.dart';
+import 'grocerry_kit/manage_list.dart';
 import 'grocerry_kit/signup.dart';
 import 'grocerry_kit/sub_pages/cart.dart';
 
@@ -32,40 +33,29 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.amber,
       ),
       routes: {
-    //    '/': (context) => AnimatedBottomBar(),
+        //    '/': (context) => AnimatedBottomBar(),
         '/': (context) => WelcomePage(),
         '/grocerry/signup': (context) => SignupPage(),
         '/grocerry/login': (context) => LoginPage(),
         '/grocerry/home': (context) => HomePage(),
         '/grocerry/cart': (context) => CartPage(),
         '/grocerry/chatroom': (context) => ChatRoomPage(),
-        '/grocerry/profile': (context) => ProfileList(),
-        //'/grocerry/game': (context) => GamePage(),
-        // '/grocerry/study': (context) => StudyPage(),
-        // '/grocerry/sports': (context) => SportsPage(),
-        // '/grocerry/music': (context) => MusicPage(),
+        '/grocerry/profile': (context) => MyChatRoomList(),
+        '/grocerry/board' : (context) => BoardPage(),
+//           '/grocerry/sub_pages/home_list': HomeList(),
+        //   '/grocerry/study': (context) => StudyPage(),
+        //   '/grocerry/sports': (context) => SportsPage(),
+        //    '/grocerry/music': (context) => MusicPage(),
         '/grocerry/makeroom': (context) => makeRoomPage(),
         '/grocerry/search': (context) => SearchPage(),
         '/grocerry/my_account': (context) => MyAccountPage(),
+        '/grocerry/manage': (context) => ManageList(),
+        '/grocerry/manage_one': (context) => ManageOne(),
 
         AnimatedBottomBar.tag: (context) => AnimatedBottomBar(),
         EditNote.tag: (context) => EditNote(),
       },
-      onGenerateRoute: _getRoute,
+//      onGenerateRoute: _getRoute,
     );
   }
-  Route<dynamic> _getRoute (RouteSettings settings){
-    if(settings.name == '/grocerry/category_detail'){
-      return _buildRoute(settings, new CategoryDetailPage(settings.arguments));
-    }
-    return null;
-  }
-
-  MaterialPageRoute _buildRoute(RouteSettings settings, Widget builder){
-    return new MaterialPageRoute(
-      settings: settings,
-      builder: (ctx) => builder,
-    );
-  }
-
 }
