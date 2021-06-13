@@ -16,7 +16,7 @@ class HomeList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-//    room_list();
+    room_list();
     return Scaffold(
       body: Container(
         color: const Color(0xffF4F7FA),
@@ -136,9 +136,11 @@ class HomeList extends StatelessWidget {
   final List<int> count_set = new List<int>();
   final List<int> category_set = new List<int>();
   final List<int> roomId_set = new List<int>();
+  final List<String> imageUrl_set = new List<String>();
   int real_room_cnt = 0;
 
   Future room_list() async{
+    print(" Im in room list");
     final conn = await MySqlConnection.connect(ConnectionSettings(
         host: 'placeofmeeting.cjdnzbhmdp0z.us-east-1.rds.amazonaws.com',
         port: 3306,
@@ -153,43 +155,60 @@ class HomeList extends StatelessWidget {
     category_set.clear();
     count_set.clear();
     roomId_set.clear();
+    imageUrl_set.clear();
     real_room_cnt = room_info.length;
+    //print("real_room_count: "+ real_room_cnt.toString());
     for(var row in room_info){
       //print(row[0].toString() +" "+row[1]+" "+row[2].toString() + " "+ row[3].toString());
-      category_set.add(row[0].toInt());
+      // if(tmp == null) break;
+      category_set.add(row[0]);
       title_set.add(row[1]);
-      count_set.add(row[2].toInt());
+      count_set.add(row[2]);
+      //count_set.add(tmp2.toInt());
       roomId_set.add(row[3]);
+      imageUrl_set.add("images/userImage1.jpeg");
       //real_room_cnt++;
     }
     conn.close();
+    //print("real_room_count: "+ real_room_cnt.toString());
   }
 
   Widget _buildChatList() {
     //var items = ChatUsers();
 
     //room_list();
-    print('real_count: ${real_room_cnt}');
-    return Container(
-      height: 290,
-      alignment: Alignment.centerLeft,
-      child: ListView.builder(
-        shrinkWrap: true,
-        physics: ClampingScrollPhysics(),
-        scrollDirection: Axis.vertical,
-        itemCount: real_room_cnt,//title_set.length, // 채팅방 수
-        itemBuilder: (context, index) {
-          //var data = items[index];
-          // print("Hello builder");
-          // print('room count:' + title_set.length.toString());
-          return  ChatRoomList(
-            title: title_set[index],
-            category: category_set[index].toString(),// 일시적 조치 category
-            count: count_set[index].toString(), // 카운트
-            roomID: roomId_set[index],
-          );
-        },
-      ),
+    //print('real_count: ${real_room_cnt}');
+    return FutureBuilder(
+      future: room_list(),
+        builder: (context, room_list) {
+          if(room_list.hasData == null){
+            return Container(
+              child: Text("Loading..."),
+            );
+          }
+          return Container(
+                height: 290,
+                alignment: Alignment.centerLeft,
+                child: ListView.builder(
+                  shrinkWrap: true,
+                  physics: ClampingScrollPhysics(),
+                  scrollDirection: Axis.vertical,
+                  itemCount: real_room_cnt,//title_set.length, // 채팅방 수
+                  itemBuilder: (context, index) {
+                    //var data = items[index];
+                    // print("Hello builder");
+                    // print('room count:' + title_set.length.toString());
+                    return  ChatRoomList(
+                      title: title_set[index],
+                      category: category_set[index].toString(),// 일시적 조치 category
+                      count: count_set[index].toString(), // 카운트
+                      roomID: roomId_set[index],
+                      imageUrl: imageUrl_set[index],
+                    );
+                  },
+                ),
+              );
+        }
     );
   }
 
@@ -202,6 +221,7 @@ class HomeList extends StatelessWidget {
     list.add(new Product('Study', Icons.menu_book_outlined));
     list.add(new Product('Food', Icons.fastfood));
     list.add(new Product('Friends', Icons.wc));
+    list.add(new Product('Book', Icons.book));
     list.add(new Product('Etc', Icons.video_collection_outlined));
     // 이름, 이미지를 넣을 수 있다.
 
@@ -212,12 +232,13 @@ class HomeList extends StatelessWidget {
 
 class ChatRoomList extends StatefulWidget{
   String title; // 방제목
-  String category; // 방 설명
-  String count; //Icon icon_name; // 아이콘이나 이미지
+  String category;
+  String count; // 방 인원
+  String imageUrl; // 방 사진
   int roomID;
   // String time;
   // bool isMessageRead;
-  ChatRoomList({@required this.title,@required this.category,@required this.count, @required this.roomID/*,@required this.time,@required this.isMessageRead*/});
+  ChatRoomList({@required this.title,@required this.category,@required this.count, @required this.roomID, @required this.imageUrl/*,@required this.time,@required this.isMessageRead*/});
   @override
   _ChatRoomListState createState() => _ChatRoomListState();
 }
@@ -236,7 +257,7 @@ class _ChatRoomListState extends State<ChatRoomList> {
               child: Row(
                 children: <Widget>[
                   CircleAvatar(
-                    child: Text(widget.count),
+                    backgroundImage: NetworkImage(widget.imageUrl),
                     maxRadius: 30,
                   ),
                   SizedBox(width: 16,),
@@ -246,9 +267,9 @@ class _ChatRoomListState extends State<ChatRoomList> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text(widget.category, style: TextStyle(fontSize: 16),),
+                          Text(widget.title, style: TextStyle(fontSize: 16),),
                           SizedBox(height: 6,),
-                          Text(widget.title,style: TextStyle(fontSize: 13,color: Colors.grey.shade600, fontWeight: FontWeight.normal),),
+                          Text(widget.count,style: TextStyle(fontSize: 13,color: Colors.grey.shade600, fontWeight: FontWeight.normal),),
                         ],
                       ),
                     ),

@@ -2,10 +2,13 @@
 <project version="4">
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
 >>>>>>> 98992d0b37e1f07a72f8c834ff06d1e3b6056c3d
+>>>>>>> 27f4a1a32dcaf7b9cd335ef980493f7583a73187
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,6 +22,14 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+<<<<<<< HEAD
+        <item name="GROUP_NODE:myorigin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+=======
+>>>>>>> 27f4a1a32dcaf7b9cd335ef980493f7583a73187
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
@@ -26,6 +37,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64b84c14-83cb-42f9-a933-08f745da7290" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/987f9b2f61fab7f69fddcb9de2e2be14/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/987f9b2f61fab7f69fddcb9de2e2be14/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/987f9b2f61fab7f69fddcb9de2e2be14/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/987f9b2f61fab7f69fddcb9de2e2be14/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/987f9b2f61fab7f69fddcb9de2e2be14/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/987f9b2f61fab7f69fddcb9de2e2be14/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/987f9b2f61fab7f69fddcb9de2e2be14/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/987f9b2f61fab7f69fddcb9de2e2be14/kernel_snapshot.stamp" afterDir="false" />
+=======
 <<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
@@ -974,6 +991,7 @@
       <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/grocerry_kit/home_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/grocerry_kit/profile.dart" afterDir="false" />
 =======
+>>>>>>> 27f4a1a32dcaf7b9cd335ef980493f7583a73187
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
@@ -989,13 +1007,21 @@
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/game.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/grocerry_kit/game.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/music.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/sports.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/study.dart" beforeDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/category_detail.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/grocerry_kit/category_detail.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/grocerry_kit/home_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/make_room.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/grocerry_kit/make_room.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/manage_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/grocerry_kit/manage_list.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/my_account.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/grocerry_kit/my_account.dart" afterDir="false" />
 >>>>>>> 98992d0b37e1f07a72f8c834ff06d1e3b6056c3d
+>>>>>>> 27f4a1a32dcaf7b9cd335ef980493f7583a73187
       <change beforePath="$PROJECT_DIR$/lib/grocerry_kit/sub_pages/home_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/grocerry_kit/sub_pages/home_list.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1081,6 +1107,12 @@
   </component>
   <component name="WindowStateProjectService">
 <<<<<<< HEAD
+    <state x="116" y="94" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622822137779">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="116" y="94" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1622822137779" />
+=======
+<<<<<<< HEAD
     <state x="184" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622805491100">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
@@ -1099,10 +1131,37 @@
     </state>
     <state x="475" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1622805396550" />
 >>>>>>> 98992d0b37e1f07a72f8c834ff06d1e3b6056c3d
+>>>>>>> 27f4a1a32dcaf7b9cd335ef980493f7583a73187
     <state x="394" y="101" width="653" height="487" key="AVDManager" timestamp="1622792423921">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="394" y="101" width="653" height="487" key="AVDManager/0.0.1280.680@0.0.1280.680" timestamp="1622792423921" />
+<<<<<<< HEAD
+    <state x="100" y="99" key="FileChooserDialogImpl" timestamp="1622897644448">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="100" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1622897644448" />
+    <state width="1236" height="97" key="GridCell.Tab.0.bottom" timestamp="1622897649046">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1236" height="97" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1622897649046" />
+    <state width="1236" height="97" key="GridCell.Tab.0.center" timestamp="1622897649045">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1236" height="97" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1622897649045" />
+    <state width="1236" height="97" key="GridCell.Tab.0.left" timestamp="1622897649045">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1236" height="97" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1622897649045" />
+    <state width="1236" height="97" key="GridCell.Tab.0.right" timestamp="1622897649045">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1236" height="97" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1622897649045" />
+    <state x="280" y="257" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1622806012253">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="280" y="257" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1622806012253" />
+=======
     <state x="120" y="120" key="FileChooserDialogImpl" timestamp="1622805043600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -1159,14 +1218,22 @@
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1622805180742" />
 >>>>>>> 98992d0b37e1f07a72f8c834ff06d1e3b6056c3d
+>>>>>>> 27f4a1a32dcaf7b9cd335ef980493f7583a73187
     <state x="27" y="154" key="run.anything.popup" timestamp="1622381315017">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="27" y="154" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1622381315017" />
+<<<<<<< HEAD
+    <state x="140" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1622806508295">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="140" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1622806508295" />
+=======
     <state x="784" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1622830257203">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="784" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1622830257203" />
+>>>>>>> 27f4a1a32dcaf7b9cd335ef980493f7583a73187
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1175,6 +1242,11 @@
           <url>file://$PROJECT_DIR$/lib/main.dart</url>
           <line>26</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/main.dart</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
